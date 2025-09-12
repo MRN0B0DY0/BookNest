@@ -1,0 +1,291 @@
+body {
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    background-color: #f7f3ef;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.booknest-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 250vh; 
+    width: 100vw;
+}
+
+.sidebar {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 12vw;
+    padding: 1rem; 
+    color: #efebe9;
+    background-color: #5d4037;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    height: 83vh; 
+    padding-left: 0.5rem;
+}
+
+.brand-name {
+    font-size: 40px;
+}
+
+.sidebar-menu {
+    gap: 1rem;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+}
+
+.sidebar-footer {
+    text-align: center;
+    height: 3rem;
+    width: 8rem;
+}
+
+.sidebar-footer button {
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.content-area {
+    margin-left: 17vw;
+    width: 80vw;  
+    padding-top: 4.5rem;
+}
+
+.hero-banner {
+    height: 20vh;
+    width: 75vw;
+    background-color: #f6f5f4;
+    border-radius: 0.5rem;
+    border: solid #3e2c1c 2px;
+    padding: 10px;
+    padding-left: 2.5rem;
+}
+
+.hero-banner h1 {
+    font-size: 2rem;
+    color: #5d4037;
+
+}
+
+/* currenty reading section */
+
+.current-reads,
+.trending-section,
+.recommend-section {
+    height: 60vh;
+    width: 75vw; 
+    color: #5d4037;
+    margin-top: 3rem; 
+    padding: 10px;
+    padding-left: 2.5rem;
+    border-radius: 0.5rem; 
+    background-color: #f6f5f4;
+    border: solid #3e2c1c 2px;
+}
+
+.current-reads h2,
+.trending-section h2,
+.recommend-section h2 {
+    color: #5d4037;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.book-list,
+.trending-list,
+.recommend-list {
+    display: flex;
+    flex-direction: row; 
+    height: 47vh;
+    overflow-x: auto; 
+}
+
+.book-card,
+.trending-card,
+.recommend-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 43vh;
+    width: 10vw;
+    margin-right: 2rem;
+    background-color: #efebe9;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    border: solid #5d4037 1px;
+}
+
+.book-card img,
+.trending-card img,
+.recommend-card img {
+    height: 23vh; 
+    width: 8vw;
+}
+
+.book-card h3,
+.trending-card h3,
+.recommend-card h3 {
+    height: 3rem;
+    margin-top: 0.5rem;
+    font-size: 15px;
+    text-align: center; 
+}
+
+.book-card-author,
+.trending-card-author,
+.recommend-card-author {
+    height: 1.5rem;
+    font-size: 12px; 
+    text-align: center;
+}
+
+.book-card div,
+.trending-card div,
+.recommend-card div {
+    height: 1.5rem;
+    font-size: 12px;
+}
+
+.book-card-genre,
+.trending-card-genre,
+.recommend-card-genre {
+    width: 4.5rem;
+    text-align: center;
+    font-size: 12px;
+    color: #efebe9;
+    background-color: #3e2c1c;
+    border-radius: 1rem;
+}
+
+.sidebar-sm {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .sidebar {
+        width: 15vw;
+    }
+
+    .sidebar-menu {
+        font-size: 15px;
+    }
+
+    .brand-name {
+        font-size: 30px;    
+    }
+
+    .content-area {
+        margin-left: 22vw;
+        width: 20vw;
+    }
+
+    .hero-banner {
+        height: 25vh;
+    }
+
+    .current-reads,
+    .trending-section,
+    .recommend-section {
+        width: 70vw;
+    }
+
+    .book-card, 
+    .trending-card,
+    .recommend-card {
+        width: 15vw;
+    }
+
+    .book-card img, 
+    .trending-card img,
+    .recommend-card img {
+        width: 12vw;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+
+  .sidebar-sm { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: fixed;
+    height: 90vh;
+    width: 40px;
+    color: #efebe9;
+    background-color: #5d4037;
+    }
+
+    .sidebar-button {
+        background-color: #efebe9;
+        border: none;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .ham-btn {
+        border-radius: 0.3rem;
+    }
+
+    .login-btn {
+        border-radius: 5em;
+    }
+
+    .content-area {
+    margin-left: 40px;
+    width: 30vw;
+    padding: 1rem;
+  }
+
+  .hero-banner {
+    height: 25vh;
+  }
+
+  .book-card,
+  .trending-card,
+  .recommend-card {
+    height: 35vh; 
+    width: 100vw;
+  }
+
+  .book-card img,
+  .trending-card img,
+  .recommend-card img {
+    height: 12vh;
+    width: 10vw;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+    .book-card i,
+    .trending-card i,
+    .recommend-card i {
+        font-size: 10px;
+    }
+
+    .sidebar-sm {
+        height: 94vh;
+    }
+}
