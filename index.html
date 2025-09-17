@@ -16,8 +16,8 @@
             <p>Home</p>
             <p>Genre</p>
             <ul>
-              <li>Friction</li>
-              <li>Non-Friction</li>
+              <li>Fiction</li>
+              <li>Non-Fiction</li>
               <li>Self-Help</li>
               <li>Tech</li>
               <li>History</li>
@@ -57,12 +57,16 @@
                 />
               <h3>Harry Potter</h3>
               <span class="book-card-author">J.K. Rowling</span>
-              <div>
+              <div class="review-star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="review-popup">
+                1> Best book of all time love the writing and the dream J.k Rowling is my all time favorite writer</br>
+                2> One of the best book series ever!! Charming and Witty, you just cant put the book down.
               </div>
               <span class="book-card-genre">Friction</span>
             </div>
@@ -81,6 +85,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
+              <div class="review-popup">
+                1> This book does a great job of laying down the framework of how habits are formed, and shares insightful strategies for building good habits and breaking bad ones.</br>
+                2> This book and The New Emotional Intelligence by Travis Bradberry are my two favorite self-improvement books.
+              </div>
               <span class="book-card-genre">Self-Help</span>
             </div>
 
@@ -97,6 +105,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review-popup">
+                1> I first read What is History as part of a philosophy of history class. I believe that the course was given by Aristotle and the book was written on papyrus. I recall being.....</br>
+                2> Although he penned an immense collection of writings on the Soviet Union and international relations, most historians outside of his speciality.....
               </div>
               <span class="book-card-genre">History</span>
             </div>
@@ -120,6 +132,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
+              <div class="review-popup">
+                1> this book hit me so hard. I finished this book a few days ago and I haven't been able to stop thinking about it. </br>
+                2> It is no secret that Matt Haig has mental health issues, dogged by the darkness of depression that has taken its toll on his life.
+              </div>
               <span class="trending-card-genre">Fiction</span>
             </div>
 
@@ -137,6 +153,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
+              <div class="review-popup">
+                1>  loved Isaacson's Benjamin Franklin and Steve Jobs biographies. I really, really wanted to love this one.</br>
+                2> In his latest book, Isaacson offers the reader an insightful look into the world of technology and the numerous people whose insights and innovative ideas have changed the world in which we live.
+              </div>
               <span class="trending-card-genre">Tech</span>
             </div>
 
@@ -153,6 +173,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review-popup">
+                1> When I read self help type books, I'll highlight if I come across something that rings true. I'll use a second stronger color if it provides insight or a new path I hadn't seen/thought of before, or that I had forgotten.</br>
+                2> I cannot tell you how much this book has allowed me to see not only how much I self sabotage, but also to feel calm & completely inspired to move forward toward greater things.
               </div>
               <span class="trending-card-genre">Self-Help</span>
             </div> 
@@ -176,6 +200,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
+              <div class="review-popup">
+                1> this book hit me so hard. I finished this book a few days ago and I haven't been able to stop thinking about it. </br>
+                2> It is no secret that Matt Haig has mental health issues, dogged by the darkness of depression that has taken its toll on his life.
+              </div>
               <span class="recommend-card-genre">Fiction</span>
             </div> 
 
@@ -192,6 +220,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review-popup">
+                1> his book explains why some countries became more powerful than others.According to the author, factors such as geography and the environment played a major role.</br>
+                2> Jared sticks to the basic premise and plugs every hole in his argument so well to construct a magnificent explanation of the evolution of societies.
               </div>
               <span class="recommend-card-genre">History</span>
             </div>
@@ -210,6 +242,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
+              <div class="review-popup">
+                1> This book does a great job of laying down the framework of how habits are formed, and shares insightful strategies for building good habits and breaking bad ones.</br>
+                2> This book and The New Emotional Intelligence by Travis Bradberry are my two favorite self-improvement books.
+              </div>
               <span class="recommend-card-genre">Self-Help</span>
             </div>
           </div>
@@ -221,16 +257,6 @@
 
     <script
       src="https://kit.fontawesome.com/7fac82542b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
   </body>

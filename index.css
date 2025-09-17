@@ -157,7 +157,7 @@ body {
 .book-card div,
 .trending-card div,
 .recommend-card div {
-    height: 1.5rem;
+    height: 1rem;
     font-size: 12px;
 }
 
@@ -175,6 +175,30 @@ body {
 .sidebar-sm {
     display: none;
 }
+
+
+.book-card .review-popup,
+.trending-card .review-popup,
+.recommend-card .review-popup {
+  display: none;
+  font-size: 12px;
+  height: 20vh;
+  margin-top: 5px; 
+  background: #f6f5f4;
+  border: 1px solid #5d4037;
+  border-radius: 5px;
+  text-align: center;
+  color: #3e2c1c;
+  overflow-y: scroll;
+}
+
+/* Show ONLY when hovering stars */
+.book-card:hover .review-popup,
+.trending-card:hover .review-popup,
+.recommend-card:hover .review-popup {
+  display: block;
+}
+
 
 @media screen and (max-width: 1300px) {
     .sidebar {
