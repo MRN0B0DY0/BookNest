@@ -220,6 +220,7 @@ body {
 
     .hero-banner {
         height: 25vh;
+        width: 70vw;
     }
 
     .current-reads,
@@ -284,6 +285,7 @@ body {
 
   .hero-banner {
     height: 25vh;
+    width: 70vw;
   }
 
   .book-card,
@@ -303,6 +305,11 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+
+    .hero-banner {
+        width: 70vw;
+    }
+
     .book-card i,
     .trending-card i,
     .recommend-card i {
