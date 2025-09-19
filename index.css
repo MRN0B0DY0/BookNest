@@ -135,6 +135,7 @@ body {
 .recommend-card img {
     height: 23vh; 
     width: 8vw;
+    border: solid #5d4037 1px;
 }
 
 .book-card h3,
@@ -174,31 +175,29 @@ body {
 
 .sidebar-sm {
     display: none;
-}
-
+} 
 
 .book-card .review-popup,
 .trending-card .review-popup,
 .recommend-card .review-popup {
   display: none;
   font-size: 12px;
-  height: 20vh;
-  margin-top: 5px; 
+  height: auto;
+  width: 30vw;
+  padding: 0.5rem 1rem 1rem 0.2rem;
   background: #f6f5f4;
   border: 1px solid #5d4037;
   border-radius: 5px;
-  text-align: center;
-  color: #3e2c1c;
-  overflow-y: scroll;
+  text-align: start;
+  color: #3e2c1c;  
+  position: absolute;
 }
 
-/* Show ONLY when hovering stars */
 .book-card:hover .review-popup,
 .trending-card:hover .review-popup,
 .recommend-card:hover .review-popup {
   display: block;
 }
-
 
 @media screen and (max-width: 1300px) {
     .sidebar {
